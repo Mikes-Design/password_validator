@@ -26,6 +26,7 @@ def check_upper(passwrd: str):
             return True
         else:
             print("Password must have at least one uppercase.")
+            return False
 
 
 password = input("Please enter a password: ")
