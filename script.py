@@ -6,31 +6,37 @@
 
 def password_length(passwrd: str):
 
-    if len(passwrd) <= 8 and len(passwrd) >= 8:
-        print("Password Length is good")
+    if len(passwrd) >= 8 and len(passwrd) <= 16:
+        print("Password Length is good!")
         return True
     else:
-        print("Password must be between 8-16 characters long.")
+        print("Password length must be 8-16 characters long.")
         return False
-
-
-
-password = input("Please enter a password ")
-
-password_length(password)
-
-            
-
-
-
-
-
-
 
 
 #function to check if password has uppercase letters
     # Check for uppercase letters
     # Return True/False and message
+
+
+def check_upper(passwrd: str):
+    for char in passwrd:
+        if char.isupper():
+            print("Password meets uppercase requirement!")
+            return True
+        else:
+            print("Password must have at least one uppercase.")
+
+
+password = input("Please enter a password: ")
+
+check_upper(password)
+
+
+
+
+
+
 
 #function to check if password has lowercase letters
     #Check for lowercase letters
