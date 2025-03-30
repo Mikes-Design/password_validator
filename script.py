@@ -29,19 +29,25 @@ def check_upper(passwrd: str):
             return False
 
 
-password = input("Please enter a password: ")
-
-check_upper(password)
-
-
-
-
-
-
-
 #function to check if password has lowercase letters
     #Check for lowercase letters
     #Return Truse/False and message
+
+def check_lower(passwrd: str):
+    for char in passwrd:
+        if char.islower():
+            print("Password meets lowercase requirment!")
+            return True
+        else:
+            print("Password must have at least one lowercase letter.")
+            return False
+        
+    
+
+password = input("Please enter a password: ")
+
+check_lower(password)
+
 
 #function to check if password has at least one number
     # Check for at least one number
