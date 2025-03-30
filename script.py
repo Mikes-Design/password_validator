@@ -1,5 +1,16 @@
 # Password Validator Functions
 
+
+
+#imports
+import string
+
+#variable that uses the string import for special characters
+special_char = string.punctuation
+
+
+
+
  #function to check if password is between 8-16 characters
     # Check if password length is between 8-16 characters
     # Return True/False and message
@@ -42,9 +53,6 @@ def check_lower(passwrd: str):
     print("Password must have at least one lowercase letter.")
     return False
         
-password = input("enter a password: ")
-check_lower(password)
-        
     
 #function to check if password has at least one number
     # Check for at least one number
@@ -62,12 +70,26 @@ def check_number(passwrd: str):
     return False
 
 
-
-
-
 #function to check if password has at least one special character
     # Check for special characters
     # Return True/False and message
+
+def check_special(passwrd: str):
+
+    for char in passwrd:
+        if char in special_char:
+            print("Password meets special character requirments!")
+            return True
+        
+    print("Password must have at least one special character.")
+    return False
+
+
+
+password = input("please enter a password: ")
+check_special(password)
+
+
 
 #function to check if password has forbidden phrases
     # Check for forbidden phrases (pass, qwerty, 123)
