@@ -4,7 +4,7 @@
     # Check if password length is between 8-16 characters
     # Return True/False and message
 
-def password_length(passwrd: str):
+def check_length(passwrd: str):
 
     if len(passwrd) >= 8 and len(passwrd) <= 16:
         print("Password Length is good!")
@@ -52,6 +52,12 @@ check_lower(password)
 #function to check if password has at least one number
     # Check for at least one number
     # Return True/False and message
+
+
+
+
+
+
 
 #function to check if password has at least one special character
     # Check for special characters
