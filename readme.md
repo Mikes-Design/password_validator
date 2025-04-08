@@ -1,3 +1,28 @@
+Password Validator
+Code:You
+Data Analaysis Module 1 Project
+Author: Michael Sliger and Cindy Wedding
+version: 
+
+Introduction:
+This project is designed for presentation at April 8, 2024 class.
+
+The intention is to create a program to assure that all critera for successful log in is met.
+
+Process:
+
+1.  Review instructions and prepare pseudocode for structure of code.  
+
+2.  Preparation functions.
+
+3.  Testing.
+
+4   Implementation.git
+
+# need more content here.
+# should we keep the pseudocode?
+
+
 #Password Validator Functions
 
  #function to check if password is between 8-16 characters
