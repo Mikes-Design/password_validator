@@ -1,78 +1,40 @@
 Password Validator
-Code:You
-Data Analaysis Module 1 Project
-Author: Michael Sliger and Cindy Wedding
-version: 
 
-Introduction:
-This project is designed for presentation at April 8, 2024 class.
+Side Project for Data Analytics class at Code:You
+Authors: Michael Sliger & Cindy Wedding
 
-The intention is to create a program to assure that all critera for successful log in is met.
+Introduction
 
-Process:
+This project aims to create a robust password validation system to ensure login security. The program will verify the strength and security of user passwords by assessing multiple parameters.
 
-1.  Review instructions and prepare pseudocode for structure of code.  
+Process Overview
 
-2.  Preparation functions.
+1. Review Instructions – Define requirements and outline the structure through pseudocode.
+2. Prepare Functions – Develop key validation functions for different password rules.
+3. Testing Phase – Perform rigorous testing to ensure accuracy and efficiency.
+4. Implementation – Deploy the final validated system.
 
-3.  Testing.
+Password Validator Functions
 
-4   Implementation.git
+Each function will validate different password security aspects:
 
-# need more content here.
-# should we keep the pseudocode?
+* Check Password Length – Ensures the password is between 8-16 characters.
+* Uppercase Letter Validation – Confirms at least one uppercase letter is present
+* Lowercase Letter Validation – Checks for at least one lowercase letter.
+* Numeric Character Validation – Requires at least one number.
+* Special Character Validation – Ensures the password contains at least one special character (e.g., ).
+* Forbidden Phrase Check – Prevents weak passwords (e.g., “password,” “qwerty,” “123”).
+* Whitespace Validation – Ensures no spaces are included in the password.
+* Comprehensive Validation – Combines all checks and returns overall pass/fail status.
+* User Input Handling – Retrieves password from the user securely.
+* Result Display – Presents validation outcomes and suggestions for improvement.
+* Retry Option – Allows users to reattempt password creation if validation fails.
 
+Main Program Flow
 
-#Password Validator Functions
+1. Continuously prompt users to enter a password.
+2. Run all validation functions sequentially.
+3. Provide feedback on failed validation points.
+4. Offer users the chance to correct errors and try again.
+5. Exit once a valid password is successfully created.
 
- #function to check if password is between 8-16 characters
-    # Check if password length is between 8-16 characters
-    # Return True/False and message
-
-#function to check if password has uppercase letters
-    # Check for uppercase letters
-    # Return True/False and message
-
-#function to check if password has lowercase letters
-    #Check for lowercase letters
-    #Return Truse/False and message
-
-#function to check if password has at least one number
-    # Check for at least one number
-    # Return True/False and message
-
-#function to check if password has at least one special character
-    # Check for special characters
-    # Return True/False and message
-
-#function to check if password has forbidden phrases
-    # Check for forbidden phrases (pass, qwerty, 123)
-    # Return True/False and message
-
-#function to check if all validations are True
-    # Call all check functions
-    # Combine results
-    # Return overall validation result and messages
-
-#function to check for spaces
-    #Check for spaces in password
-    #Return True/False and message
-
-#function to get password from user
-    # Handle getting password from user
-    # Return cleaned input
-
-#function to display results
-    # Format and display validation results
-    # Show appropriate success/error messages
-
-#function to ask user if they want to try again
-    # Ask if user wants to try again
-    # Return True/False based on response
-
-#Main program flow
-    # Main program flow
-    # Loop until user quits
-   
-
-#start program
