@@ -1,0 +1,12 @@
+#function to check if password is between 8-16 characters
+    # Check if password length is between 8-16 characters
+    # Return True/False and message
+
+def check_length(passwrd: str):
+
+    if len(passwrd) >= 8 and len(passwrd) <= 16:
+        print("Password Length is good!")
+        return True
+    else:
+        print("Password length must be 8-16 characters long.")
+        return False
