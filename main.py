@@ -1,12 +1,16 @@
 #imports
+import getpass
 import string
+from check_special import check_special
+from check_spaces import check_spaces
+from check_num import check_number
+from check_length import check_length
+from check_upper import check_upper
+from check_lower import check_lower
 
 
 
 
-
-#variable that uses the string import for special characters
-special_char = string.punctuation
 
 
 
